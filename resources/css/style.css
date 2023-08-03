@@ -1,0 +1,53 @@
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+}
+
+/*-------------- header */
+
+header {
+    display: flex;
+    background-color: whitesmoke;
+    height: 5rem;
+    padding-left: 1rem;
+    justify-content: space-around;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: black 100%;
+    
+}
+
+div.logo img {
+    height: 90%;
+    width: auto;
+    padding-top: .5rem;
+}
+
+header nav {
+    width: 50%;
+    padding: 1rem;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 1.3rem;
+    margin: 0 0;
+    align-items: center;
+}
+
+header li a {
+    /* color: #57484F; */
+    color: #7D5D6C;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* header li a :hover {
+    font-weight: 500;
+} */
