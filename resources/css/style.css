@@ -62,7 +62,7 @@ header div.mobile {
 /*-------------- banner */
 
 main .banner {
-    background-image: url(../images/5.png);
+    background-image: url(../images/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -86,7 +86,6 @@ main .banner {
 
 .banner h2 {
     font-family: 'Oxygen', sans-serif;
-
     font-weight: 400;
     font-size: 2rem;
     margin-top: 0;
@@ -134,6 +133,7 @@ button h3 {
         font-size: 1.2em;
     }
 }
+
 /* ------------------mobile */
 @media only screen and (max-width: 600px) {
     /* --------------header mobile */
@@ -194,8 +194,42 @@ button h3 {
         font-weight: 500;
         color: white;
     }
-  
     
+    /*-------------- mission mobile */
+    
+    .mission {
+        margin: 4rem 4rem;
+        text-align: center;
+    }
+    
+    .mission h2{
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.8rem;
+        color: #595959;
+    }
+
+    p {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    /*-------------- gallery mobile */
+    .gallery ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        padding: 0;
+        
+    }
+    
+    .gallery li img {
+        padding: 1rem 0 0 0;
+        width: 100%;
+        
+
+
+    }
+
 }
 
 /* -----------------tablet */
@@ -265,4 +299,85 @@ button h3 {
         font-weight: 500;
         color: white;
     }
+    /*-------------- mission tablet */
+        
+    .mission {
+        margin: 4rem 4rem;
+        text-align: center;
+    }
+
+    .mission h2{
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.8rem;
+        color: #595959;
+    }
+
+    p {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    /*-------------- gallery tablet */
+    .gallery ul {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        list-style: none;
+        padding: 0;
+        column-gap: 1rem;
+        margin: 4rem;
+    }
+
+    
+    .gallery li img {
+        padding: 0;
+        width: 100%;
+
+
+    }
+    
+    
+}
+
+/* -----------------web */
+
+@media only screen and (min-width: 1090px) {
+ /*-------------- mission tablet */
+        
+ .mission {
+    margin: 4rem 4rem;
+    text-align: center;
+}
+
+.mission h2{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.8rem;
+    color: #595959;
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+/*-------------- gallery tablet */
+.gallery ul {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 0;
+    column-gap: 1rem;
+    margin: 4rem;
+
+    
+}
+
+
+.gallery li img {
+    padding: 0;
+    width: 100%;
+
+
+}   
 }
