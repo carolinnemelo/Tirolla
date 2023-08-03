@@ -1,21 +1,24 @@
+main {
+    position: relative;
+    top: 5rem;
+}
 body {
     font-family: 'Source Sans 3', sans-serif;
     margin: 0;
 }
-
 /*-------------- header */
 
 header {
+    position: fixed;
     display: flex;
-    background-color: whitesmoke;
+    background-color: white;
     height: 5rem;
-    padding-left: 1rem;
-    justify-content: space-around;
     margin: 0 auto;
     overflow: hidden;
     z-index: 10;
-    box-shadow: black 100%;
-    
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    width: 100%;   
+    justify-content: space-around;    
 }
 
 div.logo img {
@@ -25,7 +28,7 @@ div.logo img {
 }
 
 header nav {
-    width: 50%;
+    width: 40%;
     padding: 1rem;
 }
 
@@ -48,6 +51,218 @@ header li a {
     text-transform: capitalize;
 }
 
+header div.mobile {
+    display: none;
+}
 /* header li a :hover {
     font-weight: 500;
 } */
+
+/*-------------- main */
+/*-------------- banner */
+
+main .banner {
+    background-image: url(../images/5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50rem;
+    color: #595959;
+}
+
+.banner h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: #7D5D6C;
+
+}
+
+.banner h2 {
+    font-family: 'Oxygen', sans-serif;
+
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 0;
+}
+ .banner h4 {
+    margin-top: 5rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+button.get-styled {
+    background-color: #595959;
+    height: 2rem;
+    padding: 2rem 6rem;
+    border-radius: .5rem;
+    border-style: none;
+    display: flex;
+    align-items: center;
+}
+
+button h3 {
+    font-size: 1.5rem;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+@media only screen and (max-width:1600px) and (min-width: 1090px) {
+    main .banner {
+        padding-left: 30rem;
+        height: 600px;
+        width: auto;
+    }
+
+    .banner h1 {
+        font-size: 3em;
+    }
+
+    .banner h2 {
+        font-size: 1.5em;
+    }
+
+    .banner h4 {
+        font-size: 1.2em;
+    }
+}
+/* ------------------mobile */
+@media only screen and (max-width: 600px) {
+    /* --------------header mobile */
+    header{
+        height: 5rem;
+    }
+    header ul {
+        display: none;
+    }
+
+    header div.mobile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        
+    }
+    
+    header div.mobile img{
+        height: 2.7rem;
+        width: auto;
+        opacity: 50%;
+
+    }
+
+    /*-------------- main mobile*/
+    /*-------------- banner mobile */
+    main .banner {
+        justify-content: center;
+        background-position: left;
+        padding: 3rem 0 0 0;
+        height: 400px;
+    }
+    main div.banner h1{
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-shadow: .2rem .2rem .3rem white;
+        text-align: center;
+    }
+
+    main div.banner h2, 
+    main div.banner h4 {
+        display: none;
+    }
+
+    
+    button.get-styled {
+        height: 1rem;
+        padding: 1.5rem 3rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    button h3 {
+        font-size: 1.1rem;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 500;
+        color: white;
+    }
+  
+    
+}
+
+/* -----------------tablet */
+@media only screen and (max-width:1090px) and (min-width: 600px) {
+    /*-------------- header tablet */
+    header{
+        height: 5rem;
+    }
+    header ul {
+        display: none;
+    }
+
+    header div.mobile {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        
+    }
+    
+    header div.mobile img{
+        height: 2.7rem;
+        width: auto;
+        opacity: 50%;
+
+    }
+    /*-------------- main tablet*/
+    /*-------------- banner tablet */
+    main .banner {
+        justify-content: center;
+        background-position: center;
+        padding: 0 3rem 0 20rem;
+    }
+    main div.banner h1{
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .banner h2 {
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        margin-top: 0;
+        text-align: center;
+
+    }
+     .banner h4 {
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+
+    button.get-styled {
+        height: 1rem;
+        padding: 1.5rem 3rem;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    button h3 {
+        font-size: 1.1rem;
+        font-family: 'Oxygen', sans-serif;
+        font-weight: 500;
+        color: white;
+    }
+}
