@@ -1,10 +1,10 @@
-main {
-    position: relative;
-    top: 5rem;
-}
 body {
     font-family: 'Source Sans 3', sans-serif;
     margin: 0;
+}
+main {
+    position: relative;
+    top: 5rem;
 }
 /*-------------- header */
 
@@ -19,6 +19,22 @@ header {
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     width: 100%;   
     justify-content: space-around;    
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 0;
+    color: #595959;
+    text-align: center;
+}
+
+h3{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
 }
 
 div.logo img {
@@ -168,9 +184,8 @@ button h3 {
         height: 400px;
     }
     main div.banner h1{
-        font-size: 1.8rem;
-        font-weight: 700;
-        text-shadow: .2rem .2rem .3rem white;
+        font-size: 2.2rem;
+        font-weight: 400;
         text-align: center;
     }
 
@@ -202,34 +217,42 @@ button h3 {
         text-align: center;
     }
     
-    .mission h2{
-        font-family: 'Oxygen', sans-serif;
-        font-size: 1.8rem;
-        color: #595959;
-    }
-
     p {
         font-family: 'Source Sans 3', sans-serif;
         font-size: 1.2rem;
         line-height: 2;
     }
     /*-------------- gallery mobile */
-    .gallery ul {
-        display: flex;
-        list-style: none;
-        flex-direction: column;
-        padding: 0;
-        
+    div.gallery img {
+    width: 100%;
+    height: auto;
     }
+
+    div.caption {
+    padding: 0;
+    text-align: center;
+    } 
     
-    .gallery li img {
-        padding: 1rem 0 0 0;
-        width: 100%;
-        
-
-
+    .caption h3 {
+        margin-top: .4rem;
     }
 
+    .responsive {
+        width: 100%;
+    }
+    /*-------------- footer mobile */
+    footer {
+        margin-top: 8rem;
+        background-color: #7D5D6C;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+    }
+    footer p {
+        font-size: 1rem;
+        color: white;
+        font-weight: 300;
+    }
 }
 
 /* -----------------tablet */
@@ -238,6 +261,7 @@ button h3 {
     header{
         height: 5rem;
     }
+    
     header ul {
         display: none;
     }
@@ -262,10 +286,11 @@ button h3 {
         justify-content: center;
         background-position: center;
         padding: 0 3rem 0 20rem;
+        
     }
     main div.banner h1{
-        font-size: 2.2rem;
-        font-weight: 700;
+        font-size: 2.5rem;
+        font-weight: 400;
         text-align: center;
         flex-wrap: wrap;
     }
@@ -283,7 +308,6 @@ button h3 {
         text-align: center;
 
     }
-
 
     button.get-styled {
         height: 1rem;
@@ -318,66 +342,97 @@ button h3 {
         line-height: 2;
     }
     /*-------------- gallery tablet */
-    .gallery ul {
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        list-style: none;
-        padding: 0;
-        column-gap: 1rem;
-        margin: 4rem;
-    }
-
+    div.row {
+        display: flex;
     
-    .gallery li img {
-        padding: 0;
+    }
+    div.gallery {
+        margin: 0 .5rem;
+    }
+    
+    div.gallery img {
         width: 100%;
-
-
+        height: auto;
     }
+
+    div.caption {
+    padding: 0;
+    text-align: center;
+    } 
     
-    
+    .caption h3 {
+        margin-top: .4rem;
+    }
+     /*-------------- footer tablet */
+     footer {
+        margin-top: 8rem;
+        background-color: #7D5D6C;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+    }
+    footer p {
+        font-size: 1rem;
+        color: white;
+        font-weight: 300;
+    }
 }
 
 /* -----------------web */
 
 @media only screen and (min-width: 1090px) {
- /*-------------- mission tablet */
-        
- .mission {
-    margin: 4rem 4rem;
+    /*-------------- mission tablet */
+            
+    .mission {
+        margin: 4rem 4rem;
+        text-align: center;
+    }
+
+    .mission h2{
+        font-family: 'Oxygen', sans-serif;
+        font-size: 1.8rem;
+        color: #595959;
+    }
+
+    p {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+    /*-------------- gallery web */
+    div.row {
+        display: flex;
+
+    }
+    div.gallery {
+        margin: 0 .5rem;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+    div.caption {
+    padding: 0;
     text-align: center;
-}
+    } 
 
-.mission h2{
-    font-family: 'Oxygen', sans-serif;
-    font-size: 1.8rem;
-    color: #595959;
-}
+    .caption h3 {
+        margin-top: .4rem;
+    }
 
-p {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 1.2rem;
-    line-height: 2;
-}
-/*-------------- gallery tablet */
-.gallery ul {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    list-style: none;
-    padding: 0;
-    column-gap: 1rem;
-    margin: 4rem;
-
-    
-}
-
-
-.gallery li img {
-    padding: 0;
-    width: 100%;
-
-
-}   
-}
+    /*-------------- footer web */
+    footer {
+        margin-top: 8rem;
+        background-color: #7D5D6C;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+    }
+    footer p {
+        font-size: 1rem;
+        color: white;
+        font-weight: 300;
+    }
+}ch
